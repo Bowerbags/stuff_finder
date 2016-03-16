@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
-  root'welcome#index'
+  root 'welcome#index'
 
   resources :categories, only: [:show]
-  resources :classifieds, only: [:new, :create, :index, :show]
+  resources :classifieds, only: [:new, :create, :index]
 
 
   # The priority is based upon order of creation: first created -> highest priority.
